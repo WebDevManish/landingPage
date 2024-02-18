@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url(Gilroy.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", "Sans-Serif";
+}
+::selection{
+  background-color: #303030;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 80px;
+  padding: 0 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#nav h4 {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#nav h4:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
+#nav i {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 500;
+  cursor: pointer;
+}
+#center {
+  width: 100%;
+  padding: 40px 80px;
+}
+#center h1 {
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 4.8vw;
+}
+#center-in {
+  height: 200px;
+  width: 100%;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+#center-in p {
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 2vw;
+}
+#right {
+  width: 20%;
+}
+.elem {
+  padding: 15px 5px;
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.elem a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #303030;
+}
+.elem i {
+  display: none;
+}
+.elem:hover i {
+  display: block;
+}
+.elem:hover a {
+  text-decoration: underline;
+}
+#bottom {
+  height: 35%;
+  width: 100%;
+  background-color: red;
+  background-image: url(https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-position: 0 52%;
+  margin-top: -8vh;
+}
+@media (max-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  #nav h4 {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    /* display: none; */
+  }
+  #nav i {
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 50%;
+    font-weight: 500;
+  }
+  #center {
+    width: 100%;
+    /* background-color: red; */
+    padding: 15px 20px;
+  }
+  #center h1 {
+    font-size: 9.5vw;
+    font-weight: 500;
+    line-height: 8.5vw;
+  }
+  #center-in {
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  #center-in p {
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 3vw;
+  }
+  #right {
+    width: 100%;
+  }
+  .elem {
+    padding: 15px 5px;
+    border-top: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .elem a {
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  #bottom {
+    margin-top: 0.8vh;
+  }
+}
+@media (min-width: 530px) and (max-width: 600px) {
+  #bottom {
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  #right {
+    width: 40%;
+  }
+  #center h1 {
+    font-size: 6.5vw;
+    font-weight: 500;
+    line-height: 6.8vw;
+  }
+  #center-in p {
+    font-size: 2.5vw;
+    font-weight: 600;
+    line-height: 3vw;
+  }
+  .elem a {
+    font-weight: 600;
+    font-size: 2.5vw;
+  }
+  #bottom {
+    margin-top: -12vh;
+  }
+}
+@media (max-width: 340px) {
+  #center-in {
+    width: 100%;
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  #bottom {
+    height: 40%;
+    width: 100%;
+    margin-top: -4vh;
+  }
+}
